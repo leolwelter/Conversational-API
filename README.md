@@ -22,6 +22,7 @@ The API supports CRUD operations on three resources:
 1. Navigate to the project root
 2. Make sure Python > 3.5 is installed on your system
     - Also install [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+2. Create your virtual environment: `python3 -m venv env`
 3. Follow the steps listed [here](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment)
 to activate your virtual environment.
 4. Install required packages: `pip3 install -r requirements.txt`
