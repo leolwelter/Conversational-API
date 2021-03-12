@@ -1,0 +1,402 @@
+[
+{
+  "model": "Conversations.conversation",
+  "pk": 5,
+  "fields": {
+    "title": "What is the future of work?",
+    "start_date": "2021-03-12"
+  }
+},
+{
+  "model": "Conversations.conversation",
+  "pk": 6,
+  "fields": {
+    "title": "Working out every day: is it actually good for you?",
+    "start_date": "2021-03-12"
+  }
+},
+{
+  "model": "Conversations.message",
+  "pk": 8,
+  "fields": {
+    "conversation": 5,
+    "text": "I think robots will do everything.",
+    "datetime_sent": "2021-03-12T20:43:37Z"
+  }
+},
+{
+  "model": "Conversations.message",
+  "pk": 9,
+  "fields": {
+    "conversation": 5,
+    "text": "fdsf",
+    "datetime_sent": "2021-03-12T20:44:23Z"
+  }
+},
+{
+  "model": "Conversations.message",
+  "pk": 10,
+  "fields": {
+    "conversation": 6,
+    "text": "I think it is. I've been going to the gym every day and eating right for ten years.",
+    "datetime_sent": "2021-03-12T21:05:26Z"
+  }
+},
+{
+  "model": "Conversations.message",
+  "pk": 11,
+  "fields": {
+    "conversation": 6,
+    "text": "It's totally overrated. Just diet properly and your health will be fine.",
+    "datetime_sent": "2021-03-12T21:05:51Z"
+  }
+},
+{
+  "model": "Conversations.thought",
+  "pk": 11,
+  "fields": {
+    "message": 9,
+    "text": "I think this guy is a robot.",
+    "datetime_sent": "2021-03-12T21:04:38Z"
+  }
+},
+{
+  "model": "Conversations.thought",
+  "pk": 12,
+  "fields": {
+    "message": 11,
+    "text": "No exercise is a bad policy.",
+    "datetime_sent": "2021-03-12T21:06:03Z"
+  }
+},
+{
+  "model": "Conversations.thought",
+  "pk": 13,
+  "fields": {
+    "message": 11,
+    "text": "I totally agree.",
+    "datetime_sent": "2021-03-12T21:06:12Z"
+  }
+},
+{
+  "model": "Conversations.thought",
+  "pk": 14,
+  "fields": {
+    "message": 10,
+    "text": "Same here! It's the only way to live.",
+    "datetime_sent": "2021-03-12T21:06:34Z"
+  }
+},
+{
+  "model": "Conversations.thought",
+  "pk": 15,
+  "fields": {
+    "message": 10,
+    "text": "Of course the gym nuts invade.",
+    "datetime_sent": "2021-03-12T21:06:43Z"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$216000$s6kxyL6WHkjs$s/g0xi3GHmgp6F5USGkJ8aj9PVwZNqJu+mitTQyZbzo=",
+    "last_login": "2021-03-12T20:38:34.493Z",
+    "is_superuser": true,
+    "username": "leo",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-03-10T01:31:50.105Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "829dwvena1maosozgtzudnsr9hihgvp1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxJ_5Q0nMGa3e9xgHkSHFSIe4OkVJA-2bmvUSCba1p67ykKYuzUOL0uyHQg9sO8h3abZY0t3WZUO6KPGiX1znz83K4fwcVev3WUZmivQJyZCiPIyIEH2IhzTZ7Y1V0Dp2NbAaEEgfiglYbziEoJtLi_QHsCThr:1lJnlE:H4KVmAJbmdX-owXqJRxze41RnOBSiGejNj3LhNtX130",
+    "expire_date": "2021-03-24T01:35:40.832Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zq6d6bmsy7sgjd02r6gleoxt273z4y2v",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxJ_5Q0nMGa3e9xgHkSHFSIe4OkVJA-2bmvUSCba1p67ykKYuzUOL0uyHQg9sO8h3abZY0t3WZUO6KPGiX1znz83K4fwcVev3WUZmivQJyZCiPIyIEH2IhzTZ7Y1V0Dp2NbAaEEgfiglYbziEoJtLi_QHsCThr:1lKoYM:-Uebo1izt7HYL8imNJFqtUc3ttb9qWc0crx3MmqCy2k",
+    "expire_date": "2021-03-26T20:38:34.497Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-03-10T15:52:14.638Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "1",
+    "object_repr": "Thought object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-03-10T15:52:44.817Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "2",
+    "object_repr": "Thought object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-03-10T15:53:18.111Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "3",
+    "object_repr": "Thought object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-03-10T15:53:43.367Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "4",
+    "object_repr": "Thought object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-03-10T17:18:56.199Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "conversation"
+    ],
+    "object_id": "2",
+    "object_repr": "Conversation object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-03-10T17:22:38.605Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "message"
+    ],
+    "object_id": "2",
+    "object_repr": "c_id 2: Things aren't so bad, but some days are really hard. (2021-03-10 17:22:37+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-03-10T17:23:02.570Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "message"
+    ],
+    "object_id": "3",
+    "object_repr": "c_id 2: Life SUCKS. I can't imagine wanting to go through another minute. (2021-03-10 17:23:00+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-03-10T17:23:30.536Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "5",
+    "object_repr": "m_id 2: Lmao you have it easy, don't you? (2021-03-10 17:23:29+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-03-10T17:23:42.062Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "6",
+    "object_repr": "m_id 2: Yeah I think I tend to agree. (2021-03-10 17:23:41+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-03-10T17:23:57.890Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "7",
+    "object_repr": "m_id 3: I'm sorry you feel that way. It does get better. (2021-03-10 17:23:57+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-03-10T17:24:18.420Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "thought"
+    ],
+    "object_id": "8",
+    "object_repr": "m_id 3: I really hope you're doing okay, man. DM me if you need someone to talk to. (2021-03-10 17:24:16+00:00)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-03-12T20:23:54.027Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "conversation"
+    ],
+    "object_id": "4",
+    "object_repr": "id 4: What is the future of work? (2021-03-10)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-03-12T20:23:54.029Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "conversation"
+    ],
+    "object_id": "3",
+    "object_repr": "id 3: Greetings, Gaia (2021-03-10)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-03-12T20:23:54.031Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "conversation"
+    ],
+    "object_id": "2",
+    "object_repr": "id 2: What are your thoughts on life? (2021-03-10)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-03-12T20:23:54.032Z",
+    "user": [
+      "leo"
+    ],
+    "content_type": [
+      "Conversations",
+      "conversation"
+    ],
+    "object_id": "1",
+    "object_repr": "id 1: Hello World (2021-03-10)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+}
+]

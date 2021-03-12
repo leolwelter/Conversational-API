@@ -21,14 +21,27 @@ The API supports CRUD operations on three resources:
 ### Virtual Environment
 1. Navigate to the project root
 2. Make sure Python > 3.5 is installed on your system
-    - Also install [the module](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+    - Also install [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 3. Follow the steps listed [here](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment)
 to activate your virtual environment.
 4. Install required packages: `pip3 install -r requirements.txt`
 
+### Setup Django database (sqlite3)
+1. Navigate to the project root
+2. Run `python manage.py migrate`. This will set up the structure of the database.
+
+### Test Data (optional)
+1. Navigate to the project root
+2. run `python manage.py loaddata starter_data` to preload a few examples
 
 ## Running
 Now that the project is set up, running it is easy.
 1. Navigate to the project root
 2. Activate your virtualenv
 3. Run `python manage.py runserver 8000`
+
+## Tests
+Run unit tests by first navigating to the project root, then run:
+
+`python manage.py test`
+

@@ -31,7 +31,7 @@ class ConversationViewTests(TestCase):
         res = self.client.get(reverse('conversations-list'))
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize conversations to be in the same form as actual
         expected = ConversationSerializer(self.conversations, many=True).data
@@ -54,21 +54,21 @@ class ConversationViewTests(TestCase):
         search_term = '1'
         res = self.client.get(reverse('conversations-list') + f'?title={search_term}')
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
         expected = ConversationSerializer([self.conversations[0]], many=True).data
         self.assertEquals(actual, expected)
 
         search_term = 'vers'
         res = self.client.get(reverse('conversations-list') + f'?title={search_term}')
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
         expected = ConversationSerializer(self.conversations, many=True).data
         self.assertEquals(actual, expected)
 
         search_term = 'Not actually in the title anywhere'
         res = self.client.get(reverse('conversations-list') + f'?title={search_term}')
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
         expected = ConversationSerializer([], many=True).data
         self.assertEquals(actual, expected)
 
@@ -113,7 +113,7 @@ class MessageViewTests(TestCase):
         res = self.client.get(reverse('messages-list'))
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize to be in the same form as actual
         expected = MessageSerializer(self.messages, many=True).data
@@ -124,7 +124,7 @@ class MessageViewTests(TestCase):
         res = self.client.get(reverse('messages-list') + f'?cid={search_cid}')
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize to be in the same form as actual
         expected = MessageSerializer([m for m in self.messages if m.conversation_id == search_cid], many=True).data
@@ -136,7 +136,7 @@ class MessageViewTests(TestCase):
         res = self.client.get(reverse('messages-list') + f'?cid={search_cid}&text={search_text}')
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize to be in the same form as actual
         expected = MessageSerializer(
@@ -199,7 +199,7 @@ class ThoughtViewTests(TestCase):
         res = self.client.get(reverse('thoughts-list'))
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize to be in the same form as actual
         expected = ThoughtSerializer(self.thoughts, many=True).data
@@ -210,7 +210,7 @@ class ThoughtViewTests(TestCase):
         res = self.client.get(reverse('thoughts-list') + f'?mid={search_mid}')
 
         self.assertEquals(res.status_code, status.HTTP_200_OK)
-        actual = res.data.get('results')
+        actual = res.data
 
         # serialize to be in the same form as actual
         expected = ThoughtSerializer([t for t in self.thoughts if t.message_id == search_mid], many=True).data
